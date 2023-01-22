@@ -18,7 +18,7 @@ const {darker, lighter} = Colors;
 function App(): JSX.Element {
   useDeviceContext(tw, {withDeviceColorScheme: false});
 
-  const [colorScheme, toggleColorScheme] = useAppColorScheme(tw);
+  const [colorScheme, toggleColorScheme] = useAppColorScheme(tw, 'light');
   const isDarkMode = colorScheme === 'dark';
 
   const backgroundStyle = {
