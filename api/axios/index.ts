@@ -1,7 +1,7 @@
 import axios, {AxiosRequestConfig, AxiosResponse} from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://api.giphy.com/v1/',
+  baseURL: 'https://api.giphy.com/v1/',
 });
 
 const api_key = 'FSPfNME2Zi5hVag5o7doCw8G9gtyVJGL';

@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
-import {ScrollView, View} from 'react-native';
+import {ScrollView, View, ActivityIndicator} from 'react-native';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 import tw from 'twrnc';
 import {useFetchGifs} from '../../api';
 import GifCard from './GIfCard';
@@ -57,6 +58,7 @@ const GifsGridView = ({searchedQuery}: GifsGridViewProps): JSX.Element => {
           </View>
         ))}
       </View>
+      {isLoading && <ActivityIndicator size="large" color={Colors.darker} />}
     </ScrollView>
   );
 };
